@@ -1,0 +1,72 @@
+<!DOCTYPE html><!--informa al navegdor que version de HTML se ocupa-->
+<html lang="en"><!--se utiliza para comenzar a estructurar y el idioma-->
+<head><!--información general acerca del documento, incluyendo su título y
+    enlaces a scripts y hojas de estilos-->
+    <meta charset="UTF-8"><!--responsable de que se muestre el contenido correctamente y con caracteres-->
+    <!-- metaetiqueta mediante la que se establece si se puede hacer zoom en una página, el zoom inicial o 
+        la anchura de la pantalla del dispositivo-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="carru.css"> <!--se enlaza una hoja de estilo-->
+    <title>Vertical Slider</title><!--se encarga de dale titulo a la pestaña de la pagina-->
+</head><!--se cierra la parte de la informacion general-->
+<body><!--se escribe el contenido que ira dentro de la pagina web-->
+    <div class="container"><!--define el bloque del contenedor de todo el carrucel-->
+        <div class="arrows"><!--agregamos el contenedor de los quje nod defiunira los graficos-->
+            <div></div>
+            <div id="arrow-up" class="arrow-up arrow"><!--creamos el contenedor de lod graficos-->
+                <!--agregamos el link enl cual nos ayura a indicar de que manera lo requerimos, le damos un respectivo estilo-->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <!--define una ruta vectorial en la ventana gráfica-->
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5L12 3m0 0l7.5 7.5M12 3v18" />
+                  </svg><!-- terminamos de definir la ruta-->  
+            </div><!--terminamos el contenedor del primer grafico-->
+            
+            <div id="arrow-down" class="arrow-down arrow"><!--le damos una clase y un identificardor al otro contenedor-->
+                <!--agregamos el link enl cual nos ayura a indicar de que manera lo requerimos, le damos un respectivo estilo-->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <!--define una ruta vectorial en la ventana gráfica-->
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
+                  </svg><!-- terminamos de definir la ruta-->
+            </div><!--terminamos el contenedor del primer grafico-->
+        </div><!--terminamos el contenedor para agregar los graficos-->
+        <div id="slide-left" class="slide-left"><!--creamos un contenedor para el slider-->
+            <div class="slide" style="background-color: #a52bb0;"><!--hacemos los parrafos de los slider, agreamos color de fondo-->
+                <!--colocamos un titulo con un lorem-->
+                <h3 class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam odio provident cupiditate blanditiis nobis iste iusto ipsam tenetur, suscipit recusandae numquam earum sequi libero consequuntur repellat eveniet perspiciatis. Aperiam, iure!s
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed reprehenderit eaque ab, illum totam quod saepe dolores, earum perspiciatis fugiat architecto temporibus possimus pariatur corporis enim soluta dolorum aut accusamus.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias porro tempora aperiam, amet sed voluptatibus voluptas. Sapiente reprehenderit voluptas corrupti amet, sit commodi autem corporis veritatis cumque, beatae laboriosam provident?
+                </h3><!--termina el titulo-->
+            </div><!--termina el primer slider de texto-->
+
+            <div class="slide" style="background: #ff3298;"><!--hacemos los parrafos de los slider, agreamos color de fondo-->
+                 <!--colocamos un titulo con un lorem-->
+                <h3 class="title" >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex sunt consequatur suscipit incidunt, tenetur eum architecto nulla laboriosam magnam dolorum quibusdam dolores sint, blanditiis in ratione amet. Provident, pariatur! Rerum?
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt adipisci accusantium iusto repudiandae quis, laboriosam doloremque animi harum odit officia debitis quos enim praesentium quisquam vero soluta minus fugit aliquam.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor dolores molestiae ex eos porro omnis consequatur doloremque aliquam illo et similique nesciunt, ea exercitationem incidunt nemo voluptas sunt perspiciatis ut.
+                </h3><!--termina el titulo-->
+            </div><!--termina el segundo slider de texto-->
+
+            <div class="slide " style="background-color: #0b542f;" ><!--hacemos los parrafos de los slider, agreamos color de fondo-->
+                 <!--colocamos un titulo con un lorem-->
+                <h3 class="title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas ipsam nulla corrupti quis debitis, sequi molestiae, quaerat vel harum esse expedita, error tempore repellendus minima? Maiores expedita officiis sequi molestiae.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sunt dicta tenetur deserunt in similique ipsa quae delectus! Quo a tenetur corrupti. Neque, amet exercitationem. Quasi fugit quibusdam beatae nostrum!
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut fuga quibusdam est perspiciatis blanditiis error recusandae quod numquam, commodi, illum doloribus quas officia tempora temporibus, odio magni saepe aliquam omnis.
+                </h3><!--termina el titulo-->
+            </div><!--termina el segundo slider de texto-->
+        </div><!--se termina el slider de los textos-->
+        <div id="slide-right" class="slide-right"><!--colocamos el slider de las imagenes-->
+            <div class="slide"
+                style="background-image: url(img/img5.jpg); background-size: cover; background-position: center center;">
+            </div><!--colocamos la primera imagen del slider y le damos un estilo dentro de un contendedor-->
+            <div class="slide"
+                style="background-image: url(img/img6.jpg); background-size: cover; background-position: center center;">
+            </div><!--colocamos la segunda imagen del slider y le damos un estilo dentro de un contendedor-->
+            <div class="slide"
+                style="background-image: url(img/img7.jpg); background-size: cover; background-position: center center;">
+            </div><!--colocamos la tercera imagen del slider y le damos un estilo dentro de un contendedor-->
+        </div><!--terminamos el slider de imagenes-->
+    </div><!--terminamos el contenedor principal que contiene toda la estructura del carrucel-->
+
+    <script src="script.js"></script><!--enlazamos con el script realizado-->
+</body><!--se termina lo que ira dentro de la pagina web-->
+</html><!--fin de la estructura-->

@@ -1,0 +1,68 @@
+* {
+    margin: 0;/*ocupa toda la pantalla*/
+    padding: 0;/*ocupa todo el largo*/
+    font-family: sans-serif;/*tipo de letra*/
+}
+.container {/*le damos estilo al contenedor principal*/
+    width: 100%;/*ancho que ocupara*/
+    height: 100vh;/*alto que ocupara*/
+    display: flex;/*adaptabilidad*/
+    overflow: hidden;/*oculta lo que esta fuera de la pantalla*/
+    background: brown;/*fondo del contenedor*/
+}
+.slide-left{/*le colocamos estilo al slider*/
+    width: 40%;/*ancho*/
+    height: 100vh;/*largo*/
+    background: bisque;/*color de fondo*/
+    transition: 1s;/*anima cambios*/
+}
+.slide-right{/*estilo de slider*/
+    width: 60%;/*ancho*/
+    height: 100vh;/*largo*/
+    background: orange;/*color de fondo*/
+    transition: 1s;/*anima cambios*/
+}
+.slide{/*damos estilo a los slider de las imagenes*/
+    width: 100%;/*ancho*/
+    height: 100vh;/*largo*/
+    display: flex;/*adaptabilidad*/
+    justify-content: center;
+    align-items: center;/*alineado al centro*/
+}
+.slide  .title {/*damos estilo al titulo*/
+    color: #fff;/*color de letra*/
+    margin: 30px;/*espacio de margenes*/
+}
+.arrows{/*damos el estilo a los graficos*/
+    width: 100px;/*ancho*/
+    height: 100px;/*largo*/
+    position: fixed;/*adaptabilidad*/
+    top: calc(50% - 50px);/*espacion de arriba*/
+    left: calc(40% - 50px);/*espacion de los lados*/
+    display: grid;/*adapta elementos*/
+    grid-template-columns: 1fr 1fr;
+    /*proporción de las pistas de cuadrícula
+     y crear varios diseños de cuadrícula.*/
+    grid-template-rows: 1fr 1fr;
+    z-index: 10;/*posicionamiento de los elementos*/
+}
+.arrow-up{/*boton para subir*/
+    background: #fff;/*fondo de color blanco*/
+    border-top-right-radius: 8px;/*borde de arriba y los lados*/
+    border-bottom-right-radius: 8px;/*borde de arriba y los lados*/
+    cursor: pointer;/*tipo de cursor*/
+}
+.arrow-down{/*boton para bajar*/
+    background: #fff;/**fondo de color blanco*/
+    border-top-left-radius: 8px;/*borde de arriba y los lados*/
+    border-bottom-left-radius: 8px;/*borde de arriba y los lados*/
+    cursor: pointer;/*tipo de cursor*/
+}
+.arrow{/*clase de los graficos*/
+    display: flex;/*adaptabilidad*/
+    justify-content: center;/*contenido justificado y centradoi*/
+    align-items: center;/*alinea elementos al centro*/
+}
+.arrow > svg {/*Ancho del slider*/
+    width: 20px;/*ancho que ocupara*/
+}
